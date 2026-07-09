@@ -16,8 +16,7 @@ gcube 워크로드 배포 시 아래 설정으로 사용합니다.
 
 | 항목 | 값 |
 |---|---|
-| 이미지 (권장) | `public.ecr.aws/g3x5o1w3/gcube/edu/geo-gdal:latest` |
-| 이미지 (대안) | `ghcr.io/data-alliance/edu-geo-gdal:latest` |
+| 이미지 | `ghcr.io/data-alliance/edu-geo-gdal:latest` |
 | 포트 | 8888 |
 | GPU | VRAM 8GB 이상 |
 
@@ -26,8 +25,6 @@ gcube 워크로드 배포 시 아래 설정으로 사용합니다.
 위성영상 분류·분할은 타일 또는 patch 단위로 처리하면 VRAM 8GB 환경에서 학습할 수 있습니다. 대형 영상은 타일로 분할해 사용하는 것을 권장합니다.
 
 rasterio·GeoPandas는 GDAL이 포함된 바이너리 패키지로 설치되어, GeoTIFF·Shapefile 등 일반적인 지리공간 포맷을 별도 시스템 설치 없이 다룰 수 있습니다.
-
-AWS ECR이 GitHub Container Registry보다 다운로드 속도가 빠르기 때문에 사용을 권장합니다.
 
 ## 포함 환경
 
